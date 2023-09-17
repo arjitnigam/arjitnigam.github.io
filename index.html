@@ -20,10 +20,10 @@
                 use_existing_jquery = false,
                 is_spa = 1,
                 hide_element = 'body',
-                id = getParameterByName('id'); // Get 'id' parameter from URL
+                id = getParameterByName('id', window.location.href); // Get 'id' parameter from URL
 
             /* DO NOT EDIT BELOW THIS LINE */
-            f = false, d = document, code = {
+            var f = false, d = document, code = {
                 use_existing_jquery: function () {
                     return use_existing_jquery;
                 },
