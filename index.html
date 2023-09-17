@@ -14,13 +14,12 @@
         }
 
         window._vwo_code = window._vwo_code || (function () {
-            var account_id = 709402,
+            var account_id = getParameterByName('id', window.location.href),
                 settings_tolerance = 2000,
                 library_tolerance = 2500,
                 use_existing_jquery = false,
                 is_spa = 1,
-                hide_element = 'body',
-                id = getParameterByName('id', window.location.href); // Get 'id' parameter from URL
+                hide_element = 'body'
 
             /* DO NOT EDIT BELOW THIS LINE */
             var f = false, d = document, code = {
